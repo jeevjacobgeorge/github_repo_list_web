@@ -7,15 +7,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     const card = document.createElement("div")
                     card.classList.add("card")
                     
-                    const repoName = document.createElement("p")
+                    const repoName = document.createElement("h3")
                     repoName.textContent = repo.name
-
+                    
+                    const repoLinkButton = document.createElement("button")
+                    repoLinkButton.classList.add("view-button")
                     const repoLink = document.createElement("a")
                     repoLink.href = repo.html_url
                     repoLink.textContent = "View on GitHub"
 
                     card.appendChild(repoName)  
-                    card.appendChild(repoLink)
+                    repoLinkButton.appendChild(repoLink)
+                    card.appendChild(repoLinkButton)
                     repoList.appendChild(card)
                 })
             })

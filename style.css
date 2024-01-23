@@ -49,14 +49,21 @@ body {
     text-align: center;
     padding:0px 9px 9px 9px;
     border-radius: 6px;
-    border:2px solid #4A4E69;
+    border:1px solid #4A4E69;
     flex-grow: 1;
 }
 
-
 .card a{
-    text-decoration: none;  
+    text-decoration: none;
+    color:aliceblue;  
 }
 
-
-
+.view-button{
+    background-color: #4A4E69;
+    color: #fff;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
