@@ -1,69 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Default font for the body */
     background-color: #22223B;
     color: #fff;
+    margin: 0;
     padding: 0;
-    display:block;
-
+    display: block;
 }
-.hero{
-    width:80%;
+
+.hero {
+    font-family: 'Raleway', sans-serif; /* Font for the hero section */
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    margin:auto;
-    gap:18px;
+    gap: 18px;
 }
 
-.section{
+.section {
+    font-family: 'Montserrat', sans-serif; /* Font for section headings */
     width: 100%;
     background-color: #313E50;
-    padding:0px;
+    padding: 0;
     border-radius: 13px;
     padding-bottom: 12px;
 }
+
 #cover-pic {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
+
 .details {
-    margin-left:18px;
+    margin: 0 18px;
 }
-#dp{
+.details h2 {
+    margin-bottom: 0;
+}
+.details p{
+    margin-top: 7px;
+    font-size: 0.875rem;
+    margin-bottom: 4px;
+}
+.details h3{
+    font-weight: 500;
+    
+}
+#dp {
     border-radius: 50%;
     width: 20%;
     margin-left: 4%;
-    margin-top:-10%;
+    margin-top: -10%;
 }
-#repo-list{
-    margin:18px;
+
+#repo-list {
+    margin: 18px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap:10px;
-
+    gap: 18px;
 }
 
-
-.card{
+.card {
+    font-family: 'Lato', sans-serif; /* Font for card content */
     background-color: #22223B;
     text-align: center;
-    padding:0px 9px 9px 9px;
-    border-radius: 6px;
-    border:1px solid #4A4E69;
+    padding: 0px 10px 14px 10px;
+    border-radius: 10px;
+    border: 1px solid #4A4E69;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
     flex-grow: 1;
 }
 
-.card a{
-    text-decoration: none;
-    color:aliceblue;  
+.card:hover {
+    box-shadow: 0 8px 12px rgba(116, 178, 241, 0.3); /* Purple shadow effect on hover */
+    transform: translate3d(3px, -3px, 0);
 }
 
-.view-button{
+.card a {
+    text-decoration: none;
+    color: #E1E1E1;
+    font-weight: lighter;
+}
+
+.card p {
+    font-size: 1rem;
+    color:#E1E1E1;
+}
+
+.view-button {
+    font-family: 'Raleway', sans-serif; /* Font for buttons */
     background-color: #4A4E69;
     color: #fff;
     border: none;
-    padding: 7px 10px;
-    border-radius: 6px;
+    padding: 6px 12px;
+    border-radius: 9px;
     cursor: pointer;
-    margin-top: 10px;
+    font-size: 0.875rem;
+}
+
+.view-button:hover {
+    background-color: #313E50;
 }
