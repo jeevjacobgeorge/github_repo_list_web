@@ -82,19 +82,19 @@ body {
 
 
 .card p {
-    font-size: 1rem;
+    font-size: larger;
     color:#E1E1E1;
 }
 
 .view-button {
     font-family: 'Raleway', sans-serif; /* Font for buttons */
     text-decoration: none;
-    color: #E1E1E1;
+    color: #fffdfd;
     font-weight: lighter;
     font-size:x-small; 
     background-color: #12234b;
     border: 1px solid hsl(221, 54%, 22%);
-    padding: 6px 15px;
+    padding: 8px 16px;
     border-radius: 9px;
     cursor: pointer;
     font-size: 1rem;
