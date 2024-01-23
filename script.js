@@ -6,8 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 data.forEach(repo => {
                     const card = document.createElement("div")
                     card.classList.add("card")
+                    const githubPagesUrl = `https://jeevjacobgeorge.github.io/${repo.name}/`
                     card.innerHTML = `<p>${repo.name}</p>
-                    <button class="view-button"><a href="${repo.html_url}" target="_blank">View on github</a></button>`
+                    <div class="buttons">
+                    <a href="${githubPagesUrl}" target="_blank"><button class="view-button">View</button></a>
+                   <a href="${repo.html_url}" target="_blank"> <button class="view-button">Github</button></a>
+                    </div>`
                     repoList.appendChild(card)
                 })
             })

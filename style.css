@@ -60,14 +60,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 18px;
+    gap: 12px;
 }
 
 .card {
     font-family: 'Lato', sans-serif; /* Font for card content */
     background-color: #071e38;
     text-align: center;
-    padding: 0px 10px 14px 10px;
+    padding: 0px 16px 16px 16px;
     border-radius: 10px;
     border: 1px solid #4A4E69;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -80,12 +80,6 @@ body {
     transform: translate3d(3px, -3px, 0);
 }
 
-.card a {
-    text-decoration: none;
-    color: #E1E1E1;
-    font-weight: lighter;
-    font-size:smaller; 
-}
 
 .card p {
     font-size: 1rem;
@@ -94,13 +88,18 @@ body {
 
 .view-button {
     font-family: 'Raleway', sans-serif; /* Font for buttons */
+    text-decoration: none;
+    color: #E1E1E1;
+    font-weight: lighter;
+    font-size:x-small; 
     background-color: #12234b;
     border: 1px solid hsl(221, 54%, 22%);
-    padding: 6px 12px;
+    padding: 6px 15px;
     border-radius: 9px;
     cursor: pointer;
-    font-size: 0.875rem;
+    font-size: 1rem;
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); /* Example box-shadow with color and transparency */
+    flex-grow: 1;
 
 
 }
@@ -108,4 +107,10 @@ body {
 .view-button:hover {
     background-color: rgba(95, 146, 198, 0.253);
     
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
