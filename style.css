@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     display: block;
+    transition: background 0.3s ease; 
 }
 
 .hero {
@@ -62,7 +63,7 @@ body {
 
 .card {
     font-family: 'Lato', sans-serif; /* Font for card content */
-    background-color: #22223B;
+    background-color: #071e38;
     text-align: center;
     padding: 0px 10px 14px 10px;
     border-radius: 10px;
@@ -81,6 +82,7 @@ body {
     text-decoration: none;
     color: #E1E1E1;
     font-weight: lighter;
+    font-size:smaller; 
 }
 
 .card p {
@@ -90,15 +92,18 @@ body {
 
 .view-button {
     font-family: 'Raleway', sans-serif; /* Font for buttons */
-    background-color: #4A4E69;
-    color: #fff;
-    border: none;
+    background-color: #12234b;
+    border: 1px solid hsl(221, 54%, 22%);
     padding: 6px 12px;
     border-radius: 9px;
     cursor: pointer;
     font-size: 0.875rem;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); /* Example box-shadow with color and transparency */
+
+
 }
 
 .view-button:hover {
-    background-color: #313E50;
+    background-color: rgba(95, 146, 198, 0.253);
+    
 }

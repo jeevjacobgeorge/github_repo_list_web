@@ -11,5 +11,24 @@ document.addEventListener("DOMContentLoaded", function() {
                     repoList.appendChild(card)
                 })
             })
-            .catch(error => console.log("Error fetching data:", error))
+    .catch(error => console.log("Error fetching data:", error))
+    updateBackgroundColor();
+
+    // Listen for scroll events
+    window.addEventListener("scroll", function() {
+        // Update background color as you scroll
+        updateBackgroundColor();
+    });
 })  
+
+
+function updateBackgroundColor() {
+    // Get the scroll position
+    const scrollPosition = window.scrollY;
+
+    // Define the color gradient based on the scroll position
+    const gradientColor = `linear-gradient(to top, #112247 ${scrollPosition * 0.1}%, #08071c)`;
+
+    // Apply the gradient to the body background
+    document.body.style.background = gradientColor;
+}
