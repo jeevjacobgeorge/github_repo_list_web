@@ -27,7 +27,7 @@ function updateBackgroundColor() {
     const scrollPosition = window.scrollY;
 
     // Define the color gradient based on the scroll position
-    const gradientColor = `linear-gradient(to top, #112247 ${scrollPosition * 0.1}%, #08071c)`;
+    const gradientColor = `linear-gradient(to top, #112247 ${scrollPosition * 0.1}%, #0E1833)`;
 
     // Apply the gradient to the body background
     document.body.style.background = gradientColor;
